@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JARVIS // Personal Intelligence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+    <main class="app-shell">
+      <header class="topbar">
+        <div class="brand"><div class="brand-mark"><span></span><i></i><b></b></div><div><p class="eyebrow">STARK INDUSTRIES // SECURE CHANNEL</p><h1>JARVIS <span>OS</span></h1></div></div>
+        <div class="topbar-actions"><div class="system-status"><span class="status-dot"></span> ALL SYSTEMS NOMINAL</div><button class="icon-button" id="clearChat" title="Clear conversation" aria-label="Clear conversation">↺</button></div>
+      </header>
+      <section class="dashboard-grid">
+        <aside class="side-panel panel">
+          <div class="panel-heading"><span>CORE STATUS</span><span class="live-label">LIVE</span></div>
+          <div class="core-visual"><div class="core-ring ring-outer"></div><div class="core-ring ring-mid"></div><div class="core-ring ring-inner"></div><div class="core-center"><span></span></div></div>
+          <div class="telemetry"><div><span>PROCESSING</span><strong>98.7%</strong></div><div class="meter"><i style="width: 98.7%"></i></div><div><span>KNOWLEDGE BASE</span><strong>ONLINE</strong></div><div class="meter"><i style="width: 84%"></i></div><div><span>VOICE MODULE</span><strong id="voiceStatus">READY</strong></div><div class="meter"><i style="width: 100%"></i></div></div>
+          <div class="side-divider"></div><p class="eyebrow">AVAILABLE PROTOCOLS</p><div class="protocol-list"><span>◈ Natural language</span><span>◈ Voice interface</span><span>◈ Local memory</span><span>◈ System diagnostics</span></div>
+        </aside>
+        <section class="chat-panel panel">
+          <div class="chat-heading"><div><p class="eyebrow">PRIMARY INTERFACE</p><h2>How can I assist you?</h2></div><div class="connection"><span></span> ENCRYPTED</div></div>
+          <div class="messages" id="messages" aria-live="polite"></div>
+          <div class="quick-actions"><button data-prompt="Run a full system diagnostic">Run diagnostics <span>↗</span></button><button data-prompt="Give me a briefing for today">Daily briefing <span>↗</span></button><button data-prompt="What can you do?">Capabilities <span>↗</span></button></div>
+          <form class="composer" id="chatForm"><button type="button" class="mic-button" id="micButton" aria-label="Use voice input"><span class="mic-icon">●</span></button><input id="messageInput" autocomplete="off" placeholder="Ask JARVIS anything..." aria-label="Message JARVIS" /><button type="submit" class="send-button" aria-label="Send message">SEND <span>➤</span></button></form>
+          <p class="composer-hint">Press <kbd>Enter</kbd> to send <span>•</span> Say “Hey Jarvis” to activate voice mode</p>
+        </section>
+        <aside class="right-panel">
+          <div class="panel insight-panel"><div class="panel-heading"><span>MISSION CONTROL</span><span class="pulse">●</span></div><div class="mission-card"><span class="mission-number">01</span><div><strong>Build something<br />extraordinary.</strong><small>FOCUS MODE // ACTIVE</small></div></div><div class="mission-card muted"><span class="mission-number">02</span><div><strong>Keep your systems<br />in sync.</strong><small>STANDBY</small></div></div></div>
+          <div class="panel insight-panel"><div class="panel-heading"><span>ENVIRONMENT</span><span>NYC / 21:42</span></div><div class="environment-stat"><span class="weather-icon">◒</span><div><strong>22°</strong><small>PARTLY CLOUDY</small></div></div><div class="environment-row"><span>NETWORK</span><strong class="green">SECURE</strong></div><div class="environment-row"><span>LATENCY</span><strong>24ms</strong></div></div>
+        </aside>
+      </section>
+      <footer><span>JARVIS INTELLIGENCE ENGINE v1.0.0</span><span>© 2024 STARK INDUSTRIES</span><span>LOCAL SESSION ACTIVE</span></footer>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
